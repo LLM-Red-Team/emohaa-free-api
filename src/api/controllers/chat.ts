@@ -201,7 +201,7 @@ function messagesPrepare(messages: any[]) {
     return content += `${message.role || 'user'}:${message.content}\n`;
   }, '');
 
-  return content;
+  return content.replace('assistant', 'emohaa');
 }
 /**
  * 检查请求结果
