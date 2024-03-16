@@ -236,7 +236,7 @@ async function receiveStream(convId: string, stream: any) {
       choices: [
         { index: 0, message: { role: 'assistant', content: '' }, finish_reason: 'stop' }
       ],
-      usage: { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 },
+      usage: { prompt_tokens: 1, completion_tokens: 1, total_tokens: 2 },
       created: util.unixTimestamp()
     };
     const parser = createParser(event => {
@@ -295,7 +295,7 @@ function createTransStream(convId: string, stream: any, endCallback?: Function) 
               index: 0, delta: {}, finish_reason: 'stop'
             }
           ],
-          usage: { prompt_tokens: 0, completion_tokens: 0, total_tokens: 0 },
+          usage: { prompt_tokens: 1, completion_tokens: 1, total_tokens: 2 },
           created
         })}\n\n`;
         !transStream.closed && transStream.write(data);
