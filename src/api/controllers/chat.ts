@@ -350,9 +350,32 @@ function generateXssParams() {
   };
 }
 
+/**
+ * 获取Token存活状态
+ */
+async function getTokenLiveStatus(token: string) {
+  const result = await axios.get("https://ai-role.cn/echo-prod/convs?role=echo", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+      ...FAKE_HEADERS,
+      ...generateXssParams()
+    },
+    timeout: 15000,
+    validateStatus: () => true
+  });
+  try {
+    const data = checkResult(result);
+    return _.isArray(data);
+  }
+  catch(err) {
+    return false;
+  }
+}
+
 export default {
   createConversation,
   createCompletion,
   createCompletionStream,
+  getTokenLiveStatus,
   tokenSplit
 };
