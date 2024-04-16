@@ -52,12 +52,6 @@ ZhipuAI (智谱清言) 接口转API [glm-free-api](https://github.com/LLM-Red-Te
 
 https://udify.app/chat/LDgsbVTfyTQ000Oq
 
-## 测试接口
-
-此接口实例部署在[Render](#Render部署)上面，遇到容器回收可能导致响应速度较慢，仅供测试，建议自行部署。
-
-https://emohaa-free-api.onrender.com
-
 ## 接入准备
 
 从 [echo.turing-world.com](https://echo.turing-world.com/) 获取token
