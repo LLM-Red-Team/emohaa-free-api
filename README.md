@@ -1,6 +1,6 @@
 # Emohaa AI Free 服务
 
-![](https://img.shields.io/github/license/llm-red-team/emohaa-free-api.svg)
+[![](https://img.shields.io/github/license/llm-red-team/kimi-free-api.svg)](LICENSE)
 ![](https://img.shields.io/github/stars/llm-red-team/emohaa-free-api.svg)
 ![](https://img.shields.io/github/forks/llm-red-team/emohaa-free-api.svg)
 ![](https://img.shields.io/docker/pulls/vinlic/emohaa-free-api.svg)
@@ -25,7 +25,7 @@ ZhipuAI (智谱清言) 接口转API [glm-free-api](https://github.com/LLM-Red-Te
 
 ## 目录
 
-* [声明](#声明)
+* [免责声明](#免责声明)
 * [在线体验](#在线体验)
 * [接入准备](#接入准备)
   * [多账号接入](#多账号接入)
@@ -39,6 +39,7 @@ ZhipuAI (智谱清言) 接口转API [glm-free-api](https://github.com/LLM-Red-Te
   * [token存活检测](#token存活检测)
 * [注意事项](#注意事项)
   * [Nginx反代优化](#Nginx反代优化)
+  * [Token统计](#Token统计)
 
 ## 免责声明
 
