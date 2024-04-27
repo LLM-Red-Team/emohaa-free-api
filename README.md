@@ -64,9 +64,7 @@ https://udify.app/chat/LDgsbVTfyTQ000Oq
 
 从 [echo.turing-world.com](https://echo.turing-world.com/) 获取token
 
-登录进入然后F12打开开发者工具，从Application > Local Storage中找到`token`的值，这将作为Authorization的Bearer Token值：`Authorization: Bearer TOKEN`
-
-![example0](./doc/example-0.jpg)
+登录进入，由于emohaa禁用F12开发者工具，请先安装 `Manage LocalStorage` 插件，再从在当前页面中打开插件并点击 `Export` 按钮找到`Token`的值，这将作为Authorization的Bearer Token值：`Authorization: Bearer TOKEN`
 
 ### 多账号接入
 
